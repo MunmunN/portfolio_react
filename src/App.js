@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import Headline from './Headline.js'
 import './App.css';
+import AOS from 'aos'; //Importing aos package
+import "aos/dist/aos.css"; //Importing AOS style
+import { useEffect } from 'react';
+import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import Specialization from './component/Specialization/Specialization.js';
+import Projects from './component/Projects/Projects.js';
+import Qualifications from './component/Qualifications/Qualifications.js';
+import Contact from './component/Contact/Contact.js';
+import Footer from './component/Footer/Footer.js';
+
+
 
 function App() {
+  useEffect(()=>{
+    AOS.init({
+      duration:2000
+    });
+    console.log("inside useeffect")
+  },[]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Headline/>
+      <Specialization/>
+      <Projects/>
+      <Qualifications/>
+      <Contact/>
+      <Footer/>
+      
+     
     </div>
   );
 }

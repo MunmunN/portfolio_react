@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+  font-family: 'Mate SC', serif;
+}
+body{
+  background-image: url("./images/bg.png");
+  
+}
+.primary_color{
+  color:#16c79a;
+}
+.text_color{
+  color:white;
+}
+.text_color_grey{
+  color:grey;
+}
+.font_10{
+  font-size: 10px;
+}
+.font_12{
+  font-size: 12px;
+}
+.font_14{
+  font-size: 14px;
+}
+.font_16{
+  font-size: 16px;
+}
+.font_18{
+  font-size: 18px;
+}
+.font_20{
+  font-size: 20px;
+}
+.font_25{
+  font-size: 25px;
+}
+.font_30{
+  font-size: 30px;
+}
+.font_40{
+  font-size: 40px;
+}
+.margin_tb{
+  margin:10px 0px;
+}
+.margin_lr{
+  margin:0px 10px;
+}
+.margin_auto{
+  margin:0 auto
+}
+.padding_tb{
+ padding:10px 0px;
+}
+.padding_lr{
+  padding:0px 10px;
+}
+.padding_30{
+  padding:30px;
+}
+padding_auto{
+ padding:0 auto
+}
+.flex_row{
+  display: flex;
+}
+.justify{
+  justify-content: space-between;
+}
+.align_center{
+  align-items: center;
+}
+.text_center{
+  text-align: center;
+}
+.container{
+  width:900px;
+  margin:0px auto;
+  position: relative;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+@media screen and (max-width: 900px) {
+  .container {
+   width: 100%;
+  }
+  .flex_col{
+    flex-direction: column;
+  }
+  .font_40{
+    font-size: 30px;
+  }
+} 
+.wrap{
+  flex-wrap: wrap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+  background-image: url("./images/bg.png");
+  color: white;
+  
+
+
+
 }
+@media screen and (max-width: 600px) {
+  .column {
+   flex: 100%;
+  }
+} */
+
